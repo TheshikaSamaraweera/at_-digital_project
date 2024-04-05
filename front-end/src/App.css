@@ -44,3 +44,14 @@
 .nav-font:hover {
   font-weight: bold;
 }
+
+.box-details {
+  width: 630px;
+  height: 306px; /* Assuming this is the hug content height */
+  top: 354px;
+  left: 80px;
+  padding: 24px 40px 32px 40px;
+  gap: 20px; /* Gap is for flexbox layout, make sure to use it within a flex container */
+  opacity: 0; /* Initial opacity is 0 */
+  position: absolute; /* Positioning */
+}
