@@ -10,7 +10,7 @@ const HeroSection = () => {
           <h1 className="text-white text-2xl lg:text-4xl xl:text-5xl font-bold mb-4">
             We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
           </h1>
-          <button className="px-6 py-2 text-white bg-orange-400 rounded transition duration-300 ease-in-out hover:bg-orange-500 hover:shadow-lg">
+          <button className="px-6 py-2 text-white bg-orange-400 rounded transition duration-300 ease-in-out transform hover:scale-105 hover:bg-orange-500 hover:shadow-lg">
             Get Free Consultation
           </button>
         </div>
