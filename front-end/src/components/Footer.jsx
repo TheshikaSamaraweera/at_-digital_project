@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
             <p className="mt-5 max-w-md">
               Your goal is our target. Not anything in between. We use online
-              marketing platforms and tools to achieve single objective - your
+              marketing platforms and tools to achieve a single objective - your
               business results.
             </p>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
             <h3 className="font-medium text-2xl mb-4">Our Technologies</h3>
             <ul>
               {OurTechnologies.map((tech) => (
-                <li key={tech.id} className="mb-3">
+                <li key={tech.id} className="mb-3 hover:cursor-pointer hover:text-yellow-300">
                   {tech.name}
                 </li>
               ))}
@@ -67,7 +67,7 @@ const Footer = () => {
             <h3 className="font-medium text-2xl mb-4">Our Services</h3>
             <ul>
               {OurServices.map((service) => (
-                <li key={service.id} className="mb-3">
+                <li key={service.id} className="mb-3 hover:cursor-pointer hover:text-yellow-300">
                   {service.name}
                 </li>
               ))}
@@ -79,9 +79,9 @@ const Footer = () => {
         <hr className="border-white w-2/3" />
       </div>
       <div className="flex justify-center items-center">
-        <button className="text-sm mx-4">Privacy Policy</button>
+        <button className="text-sm mx-4 hover:cursor-pointer hover:text-yellow-300">Privacy Policy</button>
         <span className="mx-3">|</span>
-        <button className="text-sm">Terms & Conditions</button>
+        <button className="text-sm hover:cursor-pointer hover:text-yellow-300">Terms & Conditions</button>
       </div>
     </footer>
   );
