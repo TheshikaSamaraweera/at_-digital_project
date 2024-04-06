@@ -37,25 +37,28 @@ const Question = () => {
   };
 
   return (
-    <div className="container mx-auto mt-8 p-8">
-      {questions.map(q => (
-        <div className="p-4 mb-4 bg-purple-50 rounded-lg border border-purple-50" key={q.id}>
-          <div className="flex justify-between items-center">
-            <div className={`text-lg font-inter font-medium leading-7 ${q.showDetails ? 'text-purple-600' : 'text-inter'}`}>{q.question}</div>
-            <button
-              onClick={() => toggleDetails(q.id)}
-              className={`text-gray-500 focus:outline-none p-2 ${q.showDetails ? 'text-xl text-purple-600 font-bold' : 'text-lg'}`}
-            >
-              <span className={q.showDetails ? 'text-xl' : 'text-lg'}>
-                {q.showDetails ? '-' : '+'}
-              </span>
-            </button>
+    <div>
+      <h1 className="text-2xl font-bold mb-4 text-3xl text-center pt-12 text-purple-600">Frequently Asked Questions</h1>
+      <div className="container mx-auto mt-8 p-8">
+        {questions.map(q => (
+          <div className="p-4 mb-4 bg-purple-50 rounded-lg border border-purple-50" key={q.id}>
+            <div className="flex justify-between items-center">
+              <div className={`text-lg font-inter font-medium leading-7 ${q.showDetails ? 'text-purple-600' : 'text-inter'}`}>{q.question}</div>
+              <button
+                onClick={() => toggleDetails(q.id)}
+                className={`text-gray-500 focus:outline-none p-2 ${q.showDetails ? 'text-xl text-purple-600 font-bold' : 'text-lg'}`}
+              >
+                <span className={q.showDetails ? 'text-xl' : 'text-lg'}>
+                  {q.showDetails ? '-' : '+'}
+                </span>
+              </button>
+            </div>
+            {q.showDetails && <p className="text-inter text-base font-normal leading-7 text-gray-600 mt-2">{q.details}</p>}
           </div>
-          {q.showDetails && <p className="text-inter text-base font-normal leading-7 text-gray-600 mt-2">{q.details}</p>}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  );
+  )
 };
 
 export default Question;
